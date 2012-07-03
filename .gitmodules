@@ -1,0 +1,3 @@
+[submodule "IRSlidingSplitViewController"]
+	path = IRSlidingSplitViewController
+	url = git://github.com/iridia/IRSlidingSplitViewController.git
