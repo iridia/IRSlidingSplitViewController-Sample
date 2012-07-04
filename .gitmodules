@@ -1,3 +1,6 @@
 [submodule "IRSlidingSplitViewController"]
 	path = IRSlidingSplitViewController
 	url = git://github.com/iridia/IRSlidingSplitViewController.git
+[submodule "AHEasing"]
+	path = AHEasing
+	url = git://github.com/warrenm/AHEasing.git
