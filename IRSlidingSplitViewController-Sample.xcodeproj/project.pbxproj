@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FF09C05515A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF09C05415A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.m */; };
+		FF3F16F315A483CE00E9B62C /* IREasingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F16F215A483CE00E9B62C /* IREasingView.m */; };
+		FF3F16F515A484C500E9B62C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F16F415A484C500E9B62C /* QuartzCore.framework */; };
+		FF3F16FB15A4868500E9B62C /* CAKeyframeAnimation+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F16F715A4859300E9B62C /* CAKeyframeAnimation+AHEasing.m */; };
+		FF3F16FC15A4868500E9B62C /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = FF3F16F815A4859300E9B62C /* easing.c */; };
 		FFC514D015A2C1BA0063B548 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC514CF15A2C1BA0063B548 /* UIKit.framework */; };
 		FFC514D215A2C1BA0063B548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC514D115A2C1BA0063B548 /* Foundation.framework */; };
 		FFC514D415A2C1BA0063B548 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC514D315A2C1BA0063B548 /* CoreGraphics.framework */; };
@@ -39,6 +43,13 @@
 /* Begin PBXFileReference section */
 		FF09C05315A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRVerticalSlidingSplitViewController.h; path = "IRSlidingSplitViewController-Sample/IRVerticalSlidingSplitViewController.h"; sourceTree = "<group>"; };
 		FF09C05415A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRVerticalSlidingSplitViewController.m; path = "IRSlidingSplitViewController-Sample/IRVerticalSlidingSplitViewController.m"; sourceTree = "<group>"; };
+		FF3F16F115A483CE00E9B62C /* IREasingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IREasingView.h; path = "IRSlidingSplitViewController-Sample/IREasingView.h"; sourceTree = "<group>"; };
+		FF3F16F215A483CE00E9B62C /* IREasingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IREasingView.m; path = "IRSlidingSplitViewController-Sample/IREasingView.m"; sourceTree = "<group>"; };
+		FF3F16F415A484C500E9B62C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF3F16F615A4859300E9B62C /* CAKeyframeAnimation+AHEasing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CAKeyframeAnimation+AHEasing.h"; path = "AHEasing/AHEasing/CAKeyframeAnimation+AHEasing.h"; sourceTree = "<group>"; };
+		FF3F16F715A4859300E9B62C /* CAKeyframeAnimation+AHEasing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CAKeyframeAnimation+AHEasing.m"; path = "AHEasing/AHEasing/CAKeyframeAnimation+AHEasing.m"; sourceTree = "<group>"; };
+		FF3F16F815A4859300E9B62C /* easing.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = easing.c; path = AHEasing/AHEasing/easing.c; sourceTree = "<group>"; };
+		FF3F16F915A4859300E9B62C /* easing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = easing.h; path = AHEasing/AHEasing/easing.h; sourceTree = "<group>"; };
 		FFC514CB15A2C1BA0063B548 /* IRSlidingSplitViewController-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IRSlidingSplitViewController-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC514CF15A2C1BA0063B548 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FFC514D115A2C1BA0063B548 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +73,7 @@
 				FFC514D015A2C1BA0063B548 /* UIKit.framework in Frameworks */,
 				FFC514D215A2C1BA0063B548 /* Foundation.framework in Frameworks */,
 				FFC514D415A2C1BA0063B548 /* CoreGraphics.framework in Frameworks */,
+				FF3F16F515A484C500E9B62C /* QuartzCore.framework in Frameworks */,
 				FFC514FF15A2C2790063B548 /* libIRSlidingSplitViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF3F16FA15A4859600E9B62C /* AHEasing */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F16F615A4859300E9B62C /* CAKeyframeAnimation+AHEasing.h */,
+				FF3F16F715A4859300E9B62C /* CAKeyframeAnimation+AHEasing.m */,
+				FF3F16F815A4859300E9B62C /* easing.c */,
+				FF3F16F915A4859300E9B62C /* easing.h */,
+			);
+			name = AHEasing;
+			sourceTree = "<group>";
+		};
 		FFC514C015A2C1BA0063B548 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +99,8 @@
 				FFC514DF15A2C1BA0063B548 /* IRSSVCSAppDelegate.m */,
 				FF09C05315A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.h */,
 				FF09C05415A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.m */,
+				FF3F16F115A483CE00E9B62C /* IREasingView.h */,
+				FF3F16F215A483CE00E9B62C /* IREasingView.m */,
 				FFC5150415A2C4060063B548 /* MainWindow~ipad.xib */,
 				FFC5150215A2C3FD0063B548 /* MainWindow~iphone.xib */,
 				FFC514D615A2C1BA0063B548 /* Supporting Files */,
@@ -95,9 +120,11 @@
 		FFC514CE15A2C1BA0063B548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF3F16FA15A4859600E9B62C /* AHEasing */,
 				FFC514CF15A2C1BA0063B548 /* UIKit.framework */,
 				FFC514D115A2C1BA0063B548 /* Foundation.framework */,
 				FFC514D315A2C1BA0063B548 /* CoreGraphics.framework */,
+				FF3F16F415A484C500E9B62C /* QuartzCore.framework */,
 				FFC514F315A2C2680063B548 /* IRSlidingSplitViewController.xcodeproj */,
 			);
 			name = Frameworks;
@@ -207,6 +234,9 @@
 				FFC514DC15A2C1BA0063B548 /* main.m in Sources */,
 				FFC514E015A2C1BA0063B548 /* IRSSVCSAppDelegate.m in Sources */,
 				FF09C05515A2D0E800AEDDAE /* IRVerticalSlidingSplitViewController.m in Sources */,
+				FF3F16F315A483CE00E9B62C /* IREasingView.m in Sources */,
+				FF3F16FB15A4868500E9B62C /* CAKeyframeAnimation+AHEasing.m in Sources */,
+				FF3F16FC15A4868500E9B62C /* easing.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +282,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/IRSlidingSplitViewController/**";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IRSlidingSplitViewController/**",
+					"$(PROJECT_DIR)/AHEasing/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-objc",
@@ -276,7 +309,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/IRSlidingSplitViewController/**";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IRSlidingSplitViewController/**",
+					"$(PROJECT_DIR)/AHEasing/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
